@@ -11,7 +11,7 @@ La interfaz principal se ve asi:
 6)Dorks-Eye:Buscador de Google
 
 Multi-Language in https://w0l7.pythonanywhere.com/osint-tools 
-Se documentara sobre este repo en el enlace de arriba.
+<- Aqui se documentara sobre este repo.
 Deberas Instalar los requisitos para que el script funcione.
 
 # Holehe
