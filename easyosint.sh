@@ -1,9 +1,14 @@
 #!/bin/bash
 
 
-
 main(){
-	echo "1)Holehe:Busqueda por e-mail\n2)Sherlock:Busqueda por nombre de usuario\n3)SpiderFoot:Web Suite con varios tipos de busqueda\n4)Alfred:Busqueda de usuario avanzada\n5)OxDork:Buscador de Google\n6)Dorks-Eye:Buscador de Google"
+	echo " _____      ____  ____  _  _      _____  
+/  __/     /  _ \/ ___\/ \/ \  /|/__ __\  
+|  \ _____ | / \||    \| || |\ ||  / \  
+|  /_\____\| \_/|\___ || || | \||  | |  
+\____\     \____/\____/\_/\_/  \|  \_/  
+                                        "
+	echo "1)Holehe:Busqueda por e-mail\n3)Recon-ng\n4)tGPT i.a chatbot\n5)Gohma"
 	read usrIn
 case $usrIn in
 	1)
@@ -13,32 +18,17 @@ case $usrIn in
 	holehe $usrIn
 	;;
 	2)
-	clear
-	echo "ingrese nombre de usuario > "
-	read usrIn;
-	sherlock $usrIn
+	python ../recon-ng/recon-ng
 	;;
 	3)
 	clear
-	python spiderfoot/sf.py -l 0.0.0.0:5007
+	echo "preguntale a la ia > "
+	read ask
+	tgpt "$ask"
 	;;
 	4)
 	clear
-	cd alfred
-	python tookie-osint
-	;;
-	5)
-	clear
-	echo "ingrese busqueda"
-	read dork
-	echo "ingrese cantidad de busquedas"
-	read cont
-	oxdork -c $cont $dork
-	;;
-	6)
-	clear
-	echo "Comandos---\nsite, inurl, allinurl, filetype, intitle, allintitle, intext, allintext, cache, related, link, info, define, numrange o n1..n2, (AND OR NOT), (* " " -+)\n---\nPuede leer una palabra o un archivo con varios dorks" 
-	python dorks-eye/dorks-eye.py
+	python serpa1.py
 	;;
 	*)
 
