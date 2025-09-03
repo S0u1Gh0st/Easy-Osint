@@ -3,9 +3,9 @@ Un set de Herramientas OSINT para el facil uso
 
 El directorio principal debe verse asi:
 
-eot.sh(script para Termux), easyosint(script para Debian), .env(aqui iran las api keys como la de SerpAPI), fin0.py(Archivo fuente que hace uso de yfinance),
+easyosint(script principal), .env(aqui iran las api keys como la de SerpAPI), serpa1.py(Archivo fuente que hace uso de Gohma),
 un paso mas atras deberias organizar todos los repos junto a este, Ej.
-Easy-Osint, Holehe, Sherlock,spiderfoot, alfred, 0xdork, dorks-eye, etc
+Easy-Osint, Recon-ng,Tgpt.
 
 Multi-Language in https://w0l7.pythonanywhere.com/
 <- Aqui se documentara sobre este repo 
