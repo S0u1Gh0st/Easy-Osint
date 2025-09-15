@@ -1,15 +1,12 @@
 # Easy-Osint
 Un set de Herramientas OSINT para el facil uso
 
-El directorio principal debe verse asi:
-
-easyosint(script principal), .env(aqui iran las api keys como la de SerpAPI), serpa1.py(Archivo fuente que hace uso de Gohma),
-un paso mas atras deberias organizar todos los repos junto a este, Ej.
-Easy-Osint, Recon-ng,Tgpt.
-
 Multi-Language in https://w0l7.pythonanywhere.com/
-<- Aqui se documentara sobre este repo 
+tag:easyosint
+ 
 Deberas Instalar los requisitos para que el script funcione.
+
+pip install -r requirements.txt
 
 # Recon-ng
 
@@ -22,6 +19,14 @@ https://github.com/aandrew-me/tgpt
 # Gohma
 
 Registrate en https://serpapi.com/ para obtener la api key
-requisitos serpapi dotenv, guardar la apikey en .env como
-SERPAPI_KEY=api_key
-(La finalidad de Gohma es un complemento faltante entre los 3 primeros)
+guardala en .env
+SERPAPI_KEY=
+
+#Assets
+Necesitas de estas 2 keys para lo opcion de assets, la almacenas como variables
+en las lineas 51 y 52 de eo.sh
+criminalip.io
+apikc=
+Netlas.io
+apiln=
+
